@@ -72,9 +72,6 @@ def printInfo(some_dict):
         print (k)
         print (*some_dict[k],sep='\n')
     
-
-
-
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
