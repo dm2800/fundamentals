@@ -1,7 +1,6 @@
 
 # USER CLASS CREATED WITH ATTRIBUTES + METHODS:
 
-
 class User: 
     # class attributes get defined in the class
     bank_name = "First National Dojo"
@@ -13,19 +12,19 @@ class User:
         self.account_balance = 0
     def make_deposit(self, amount):
         self.account_balance += amount
-        # return self
+        return self
     def make_withdrawal(self, amount):
         self.account_balance -= amount
-        # return self
+        return self
     # DISPLAY USER BALANCE METHOD CREATED: 
     def display_user_balance(self):
         print(self.account_balance)
-        # return self
+        return self
     # TRANSFER MONEY METHOD CREATED: 
     def transfer_money(self, amount, sender, recipient):
         sender.account_balance -= amount
         recipient.account_balance += amount
-        # return self
+        return self
 
 
 # 3 INSTANCES CREATED:
@@ -35,25 +34,13 @@ Pachito = User("Pachito McLekkerson", "pachi@python.com")
 
 
 #FIRST USER:
-Danny.make_deposit(100)
-Danny.make_deposit(200)
-Danny.make_deposit(300)
-Danny.make_withdrawal(50)
-Danny.display_user_balance()
+Danny.make_deposit(100).make_deposit(200).make_deposit(300).make_withdrawal(50).display_user_balance()
 
 #SECOND USER:
-Natasha.make_deposit(1000)
-Natasha.make_deposit(200)
-Natasha.make_withdrawal(200)
-Natasha.make_withdrawal(400)
-Natasha.display_user_balance()
+Natasha.make_deposit(1000).make_deposit(200).make_withdrawal(200).make_withdrawal(400).display_user_balance()
 
 #THIRD USER:
-Pachito.make_deposit(5000)
-Pachito.make_withdrawal(100)
-Pachito.make_withdrawal(50)
-Pachito.make_withdrawal(50)
-Pachito.display_user_balance()
+Pachito.make_deposit(5000).make_withdrawal(100).make_withdrawal(50).make_withdrawal(50).display_user_balance()
 
 
 #TRANSFER MONEY METHOD: 
