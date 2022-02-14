@@ -3,14 +3,10 @@
 
 class BankAccount:
     def __init__(self, int_rate, balance):
-        # don't forget to add some default values for these parameters!
-        # your code here! (remember, instance attributes go here)
-        # don't worry about user info here; we'll involve the User class soon 
         self.int_rate = int_rate
         self.balance = balance
         int_rate = 0.01
         balance = 0
-        # each instance is added to a list called all_accounts
     def deposit(self, amount):
         self.balance += amount
         return self
