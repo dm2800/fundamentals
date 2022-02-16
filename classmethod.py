@@ -16,11 +16,8 @@ def change_bank_name(cls,name):
 # class method to get balance of all accounts 
 @classmethod
 def all_balances(cls):
-    sum = 0 
-    # we use cls to refer to the class 
-    for account in cls.all_accounts: 
-        sum += account.balance
-    return sum 
+    for account in cls.all_accounts:
+        account.
 
 # STATIC METHOD
 
